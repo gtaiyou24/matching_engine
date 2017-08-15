@@ -25,7 +25,7 @@ tinder_engine
 ### 1. 必要なパッケージをインストール
 
 ```
-pip instal -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### 2. `modules`フォルダに`config.py`を作成する
