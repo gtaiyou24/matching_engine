@@ -32,7 +32,7 @@ pip install -r requirements.txt
 新規作成する`config.py`ファイルは以下のコードである
 
 ```python
-import fb_auth_token
+from modules import fb_auth_token
 
 fb_username = """Your facebook email"""
 fb_password = """Your facebook password"""
