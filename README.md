@@ -44,6 +44,33 @@ host = 'https://api.gotinder.com'
 ### 3. スクリプトを実行する
 `python like_bot.py`で自動LikeとLikeしたユーザをjsonで保存
 
+---
+## How to develop this package
+### (1. VirtualHost&Vagrantのインストール)
+もし、VVagrantの公式ページの[ダウンロードページ](https://www.vagrantup.com/downloads.html)にアクセスして使っている環境に合うインストーラーを選択する。そしたら、インストーラーが自動的に`vagrant`コマンドのパスを通してくれる。
+
+VirtualHostのインストールが完了したらVagrantをインストールする
+```
+brew cask install vagrant
+brew cask install vagrant-manager
+```
+
+### 2. 開発
+
+まずはじめにvagrantを起動する。(初回はプロビジョニングも行うため20分ほど時間がかかる)
+```
+$ cd /path/to/tinder_engine
+$ vagrant up
+```
+
+起動したら、ローカル環境で実装しpythonファイルの実行は仮想環境で行う。
+```
+$ vagrant ssh
+[vagrant@localhost ~]$ cd /vagrant_data/
+[vagrant@localhost ~]$ python like_bot.py
+```
+
+一通りの開発が済んだらローカル環境でpushする。
 
 ---
 ## what is Tinder Engine?
