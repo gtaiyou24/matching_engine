@@ -54,4 +54,8 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision :shell, path: "install_os.sh"
   config.vm.provision :shell, path: "install_pyenv.sh", privileged: false
+  config.vm.provision :shell, privileged: false, inline: <<-SHELL
+    cd /vagrant_data
+    pip install -r requirements.txt
+  SHELL
 end
