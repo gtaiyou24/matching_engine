@@ -46,10 +46,12 @@ host = 'https://api.gotinder.com'
 
 ---
 ## How to develop this package
-### (1. VirtualHost&Vagrantのインストール)
-もし、VVagrantの公式ページの[ダウンロードページ](https://www.vagrantup.com/downloads.html)にアクセスして使っている環境に合うインストーラーを選択する。そしたら、インストーラーが自動的に`vagrant`コマンドのパスを通してくれる。
+### (1. VirtualBox&Vagrantのインストール)
+Vagrantの公式ページの[ダウンロードページ](https://www.vagrantup.com/downloads.html)にアクセスして使っている環境に合うインストーラーを選択してダウンロードする。そしたら、インストーラーが自動的に`vagrant`コマンドのパスを通してくれる。
 
-VirtualHostのインストールが完了したらVagrantをインストールする
+VirtualBoxのバージョンは`5.1.30`です。
+
+VirtualBoxのインストールが完了したらVagrantをインストールする
 ```
 brew cask install vagrant
 brew cask install vagrant-manager
